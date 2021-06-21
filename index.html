@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- this is the font style for the header  -->
+     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    /> 
+    <title>Color Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header for the name of the game -->
+    <header id="title">
+      <h1>Color Wheel Betting Game</h1>
+    </header>
+    <main id="main-container">
+      <!-- First section is got New game and instructiom button -->
+      <section id="resetInstruction">
+        <!-- Put the button at the center and put the list at the right -->
+        <button class="btnNew">New Game</button>
+
+        <ul>
+          <!--Remove the styles-->
+          <li class="listTitle">Choose your Color</li>
+          <li>1: Red</li>
+          <li>2: Blue</li>
+          <li>3: Green</li>
+          <li>4: Yellow</li>
+          <li>5: Brown</li>
+          <li>6: Pink</li>
+        </ul>
+      </section>
+      <!-- Second section is for the color dice and roll button -->
+      <section id="dice">
+        <img class ='picture' src="" height="200px" alt="Color of the dice" />
+        <button class="btnRoll">Roll</button>
+      </section>
+      <!-- Third section is for Player Money -->
+      <section id="playerInfo">
+        <div class="playerMoney player-1">
+          <h1 class = "player1">Player 1</h1>
+          <!-- Number of player -->
+          <h2>Money</h2>
+          <h1 class =  "money1">5</h1>
+          <!-- Money of player -->
+        </div>
+        <div class="playerMoney player-2">
+          <h1 class = "player2">Player 2</h1>
+          <!-- Number of player -->
+          <h2>Money</h2>
+          <h1 class =  "money2">5</h1>
+          <!-- Money of player -->
+        </div>
+        <div class="playerMoney player-3">
+          <h1 class = "player3">Player 3</h1>
+          <!-- Number of player -->
+          <h2>Money</h2>
+          <h1 class =  "money3">5</h1>
+          <!-- Money of player -->
+        </div>
+        <div class="playerMoney player-4">
+          <h1 class = "player4">Player 4</h1>
+          <!-- Number of player -->
+          <h2>Money</h2>
+          <h1 class =  "money4">5</h1>
+          <!-- Money of player -->
+        </div>
+      </section>
+      <!-- Fourth section is for choosing a color -->
+      <section id="chooseColor">
+        <div class="choose--1 choose">
+          <label for="quantity"
+            ><p>Choose a color<br />(between 1 and 6)</p></label
+          >
+          <input class="bet1" type="number" id="quantity" name="quantity" min="1" max="6" />
+        </div>
+        <div class="choose--2 choose">
+          <label for="quantity"
+            ><p>Choose a color<br />(between 1 and 6)</p></label
+          >
+          <input class="bet2" type="number" id="quantity" name="quantity" min="1" max="6" />
+        </div>
+        <div class="choose--3 choose">
+          <label for="quantity"
+            ><p>Choose a color<br />(between 1 and 6)</p></label
+          >
+          <input class="bet3" type="number" id="quantity" name="quantity" min="1" max="6" />
+        </div>
+        <div class="choose--4 choose">
+          <label for="quantity"
+            ><p>Choose a color<br />(between 1 and 6)</p></label
+          >
+          <input class="bet4" type="number" id="quantity" name="quantity" min="1" max="6" />
+        </div>
+        <!-- this is the winner text -->
+        <h1 class="winnerText">----------------</h1>
+      </section>
+    </main>
+    <script src = "script.js"></script>
+  </body>
+</html>

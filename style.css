@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e9e1e1;
+
+  font-family: "Press Start 2P", cursive;
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+}
+
+#title {
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* I want the main container to have a border and make shadow and center page */
+#main-container {
+  border: solid;
+  display: grid;
+  grid-template-rows: 150px 150px 150px 150px;
+  box-shadow: 10px 10px 10px 2px #a39d9d;
+}
+/* this is the first section it containg 2 elements which is the btnNew and the ul */
+#resetInstruction {
+  grid-row: 1/2;
+  /* border: solid black; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+/* this belongs to the first section */
+.btnNew {
+  width: 75px;
+  height: 75px;
+  justify-self: center;
+  align-self: center;
+}
+.btnNew:hover{
+  background-color: rgb(189, 185, 185);
+}
+.btnRoll:hover{
+  background-color: rgb(189, 185, 185);
+}
+/* this belongs to the first section */
+ul {
+  margin: 0;
+  grid-column: 5/6;
+  font-size: 12px;
+}
+li {
+  font-family: "Press Start 2P", cursive;
+  list-style: none;
+  margin-top: 10px;
+}
+.listTitle{
+  margin-left: -50px;
+}
+/* this is the second section. it containg the color image and the roll button */
+#dice {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 30px;
+}
+/* this is belongs to the second section. it is the color of the dice */
+#dice img {
+  margin-top: -120px;
+  grid-column: 2/5;
+  justify-self: center;
+  height: 150px;
+}
+/* this is belongs to the second section. This the roll button*/
+#dice .btnRoll {
+  margin-top: -70px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  width: 100px;
+  height: 40px;
+  justify-self: center;
+}
+/* this is the third section for the player money */
+#playerInfo {
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* this belongs to the third section */
+/* calling only the player tag to align them in the center of the div */
+.playerMoney {
+  margin-top: -170px;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+.playerMoney h1 {
+  font-size: 15px;
+}
+.playerMoney h2 {
+  margin-left: -10px;
+  font-size: 12px;
+}
+
+/* this is the fourth section where the players will choose their bet */
+#chooseColor {
+  margin-top: -170px;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.choose {
+  align-self: center;
+  justify-self: center;
+}
+#chooseColor p {
+  font-size: 10px;
+}
+/* THIS IS THE FIFTh section for displaying the winner  */
+.winnerText {
+  text-shadow: 4px 4px 2px #aaa5a5;
+  box-shadow: 10px 10px 10px 2px #8d8c8c;
+  grid-column: 1/5;
+  justify-self: center;
+  border: 5px solid black;
+  height: 50px;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 30px;
+}
+/* Styling the buttons */
+.btnNew, .btnRoll {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  height: 50px;
+  width: 100px;
+   box-shadow: 1px 1px 2px 2px #a39d9d
+}
+
+/* this is for the hidden sty;e */
+.hidden {
+  display: none;
+}
